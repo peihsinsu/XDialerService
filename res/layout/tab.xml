@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/res/com.xdialerservice"
+	android:id="@android:id/tabhost">
+		
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:orientation="vertical"
+		android:padding="3dp"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" />
+		
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:padding="3dp"/>
+			
+	</LinearLayout>
+	
+<LinearLayout android:id="@+id/LinearLayout01"
+		android:orientation="vertical"
+		android:padding="3dp"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<com.google.ads.AdView android:id="@+id/adViewTab"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        ads:adUnitId="a14dc6cd4211f96"
+	        ads:adSize="BANNER"
+			android:layout_alignParentBottom="true"/>			
+</LinearLayout>
+	
+</TabHost>
